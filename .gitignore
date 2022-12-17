@@ -1,7 +1,3 @@
 #SSH keys
 *.pem
 *.ppk
-
-#non-essentials
-node_modules/
-logs/

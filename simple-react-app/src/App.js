@@ -13,8 +13,8 @@ function App() {
 
 function callApi() {
     fetch('http://localhost:3001/details', { method: 'GET' })
-        .then(data => data.json())
-        .then(json => alert(JSON.stringify(json)))
+        .then(response => response.json())
+        .then(data => alert(JSON.stringify(data)))
 }
 
 export default App;

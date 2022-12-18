@@ -9,13 +9,16 @@ const port = 3001;
 
 app.use(cors());
 
-mongoose.connect('mongodb://127.0.0.1:27017/db')
+const options = {
+    serverSelectionTimeoutMS: 5000, // Keep trying to send operations for 5 seconds
+    socketTimeoutMS: 5000 // Close sockets after 5 seconds of inactivity
+};
 
-const db = mongoose.connection;
-db.on("error", console.error.bind(console, "connection error: "));
-db.once("open", function () {
-    console.log("Connected successfully");
-});
+mongoose.connect('mongodb://127.0.0.1:27017', options).then(() => {
+    console.log("Connected successfully")
+}, err => {
+    console.log("error", console.error.bind(console, "connection error: "))
+})
 
 // Configuring body parser middleware
 app.use(bodyParser.urlencoded({ extended: false }));

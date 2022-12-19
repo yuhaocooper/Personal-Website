@@ -12,7 +12,7 @@ function App() {
 }
 
 function callApi() {
-    fetch('http://localhost:3001/details', { method: 'GET' })
+    fetch('http://localhost:4000/details', { method: 'GET' })
         .then(response => response.json())
         .then(data => alert(JSON.stringify(data)))
 }

@@ -27,7 +27,7 @@ mongoose.connect(`mongodb://${process.env.environment}:${process.env.port}`).the
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-//############################################################## CLIENT API ############################################################################
+//############################################################## CLIENT API #############################################################################
 app.get('/', async(req,res) =>{
     res.send("Welcome to yuhaocooper.com")
 })

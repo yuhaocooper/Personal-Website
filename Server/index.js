@@ -7,7 +7,6 @@ const userModel = require("./models");
 const assert = require('assert')
 
 const app = express();
-const port = 4000;
 
 app.use(cors());
 
@@ -27,10 +26,12 @@ mongoose.connect(`mongodb://${process.env.environment}:${process.env.port}`).the
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-//############################################################## CLIENT API #############################################################################
-app.get('/', async(req,res) =>{
-    res.send("Welcome to yuhaocooper.com")
+//############################################################## SERVER API #############################################################################
+app.get('/api', async(req,res) => {
+    res.send('test')
 })
+
+//############################################################## CLIENT API #############################################################################
 
 //Db testing endpoint
 app.get('/details', async (req, res) => {

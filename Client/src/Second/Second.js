@@ -5,7 +5,7 @@ function fullname (user){
 }
 
 const name = {
-    first: "yuhao",
+    first: "yuhaos",
     last: " tan"
 }
 

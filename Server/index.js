@@ -33,7 +33,7 @@ app.get('/api', async(req,res) => {
 
 //############################################################## CLIENT API #############################################################################
 
-//Db testing endpoint
+//Mongodb testing endpoint
 app.get('/details', async (req, res) => {
     // const user = await userModel.findOne({id: 123});
     const user = await userModel.find({});

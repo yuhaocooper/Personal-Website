@@ -2,8 +2,8 @@ import './App.css';
 import React from "react";
 
 //Pages
-import Home from './Pages/Home'
-import Second from './Pages/Second'
+import Home from './Home/Home'
+import Second from './Second/Second'
 
 
 // We use Route in order to define the different routes of our application
@@ -13,7 +13,7 @@ function App() {
   return (
     <Router>
       <div>
-        <header className='header'>
+        <header>
           <Routes>
             <Route exact path="/" element={<Home/>} />
             <Route exact path="/second" element={<Second/>} />

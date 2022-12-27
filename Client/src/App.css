@@ -10,12 +10,12 @@ body {
 
 @font-face {
   font-family: 'standard';
-  src: url(./fonts/Cormorant-VariableFont_wght.ttf);
+  src: url(./fonts/aleo-light-webfont.ttf);
 }
 
 @font-face {
   font-family: 'italics';
-  src: url(./fonts/Cormorant-Italic-VariableFont_wght.ttf);
+  src: url(./fonts/aleo-lightitalic-webfont.ttf);
 }
 
 .standard {
@@ -30,11 +30,21 @@ body {
 
 
 /*######################################################### ELEMENT SELECTORS ##################################################################*/
+div {
+  text-align: center;
+  padding: 10px;
+  align-items: center;
+  height: 33vh;
+  width: 98%;
+}
+
+
 nav {
   position: fixed;
   right:0;
   top: 17px;
   overflow: hidden;
+  font-family: 'standard';
 }
 
 nav a {

@@ -10,9 +10,8 @@ function Home (){
     return (
         <div>
             <Header></Header>
-            <h1 class='standard'>Cormorant</h1>
-            <p>Cormorant</p>
-            <button onClick={callTestApi}>Call Test API</button>
+            <div> <h1 class='standard'>Cormorant</h1> </div>
+            <div><button onClick={callTestApi}>Call Test API</button></div>
         </div>
     )
 }  

@@ -1,8 +1,8 @@
 function header(){
   return (
     <nav>
-      <a href="/">About</a>|
-      <a href="/second">Blog</a>
+      <a href="/">ABOUT</a>|
+      <a href="/second">BLOG</a>
     </nav>
   )
 }

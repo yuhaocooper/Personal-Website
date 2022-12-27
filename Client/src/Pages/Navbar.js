@@ -1,18 +1,10 @@
 function header(){
   return (
     <nav>
-      <a href="/">Main</a>
-    </nav>
-  )
-}
-
-function Footer(){
-  return (
-    <nav>
-      <a href="/">Main</a>
+      <a href="/">About</a>|
+      <a href="/second">Blog</a>
     </nav>
   )
 }
 
 export default header;
-export {Footer};

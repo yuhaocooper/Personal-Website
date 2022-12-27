@@ -7,21 +7,53 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 /*######################################################### FONT ##################################################################*/
-/*
+
 @font-face {
   font-family: 'standard';
-  src: url(./fonts/Cormorant-VariableFont_wght.ttf) format('ttf');
+  src: url(./fonts/Cormorant-VariableFont_wght.ttf);
 }
 
 @font-face {
   font-family: 'italics';
-  src: url(./fonts/Cormorant-Italic-VariableFont_wght.ttf) format('ttf');
+  src: url(./fonts/Cormorant-Italic-VariableFont_wght.ttf);
 }
-*/
+
+.standard {
+  font-family: 'standard';
+}
+
+.italics {
+  font-family: 'italics';
+}
+
 /*######################################################### FONT ##################################################################*/
 
 
 /*######################################################### ELEMENT SELECTORS ##################################################################*/
+nav {
+  position: fixed;
+  right:0;
+  top: 17px;
+  overflow: hidden;
+}
+
+nav a {
+  display: inline;
+  padding: 8px;
+}
+
+nav a:link{
+  color: lightblue
+}
+
+nav a:visited{
+  color: lightblue
+}
+
+nav a:hover{
+  color: red;
+}
+
 /*######################################################### ELEMENT SELECTORS ##################################################################*/
 
 
@@ -31,14 +63,9 @@ body {
 
 /*######################################################### CLASS SELECTORS ##################################################################*/
 .header {
-  background-color: #FFFFFF;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: orangered;
+  position: absolute;
+  top: 17px;
+  right: 0;
 }
 
 .footer {

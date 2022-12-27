@@ -16,7 +16,7 @@ dotenv.config({
     path: "./.env",
   });
 
-mongoose.connect(`mongodb://${process.env.environment}:${process.env.port}`).then(() => {
+mongoose.connect(`mongodb://${process.env.apiBaseUrl}:${process.env.dbport}`).then(() => {
     console.log("Connected successfully")
 }, err => {
     console.log("error", console.error.bind(console, "connection error: "))
@@ -27,8 +27,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 //############################################################## SERVER API #############################################################################
-app.get('/api', async(req,res) => {
-    res.send('test')
+app.get('/api/test', async(req,res) => {
+    res.send('log from api')
 })
 
 //############################################################## CLIENT API #############################################################################
@@ -41,4 +41,4 @@ app.get('/details', async (req, res) => {
 });
 //############################################################## CLIENT API #############################################################################
 
-app.listen(port, () => console.log(`Hello world app listening on port ${port}!`))
+app.listen(process.env.serverport, () => console.log(`Hello world app listening on port ${process.env.serverport}!`))

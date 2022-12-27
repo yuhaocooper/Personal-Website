@@ -1,10 +1,12 @@
-import './App.css';
 import React from "react";
 
-//Pages
-import Home from './Home/Home'
-import Second from './Second/Second'
+//CSS files
+import './App.css';
 
+//Pages
+import Home from './Pages/Home'
+import Second from './Pages/Second'
+import Headerbar, {Footer} from './Pages/Navbar'
 
 // We use Route in order to define the different routes of our application
 import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
@@ -12,14 +14,11 @@ import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 function App() {
   return (
     <Router>
-      <div>
-        <header>
-          <Routes>
-            <Route exact path="/" element={<Home/>} />
-            <Route exact path="/second" element={<Second/>} />
-          </Routes>
-        </header>
-      </div>
+        <Routes>
+          <Route exact path="/" element={<Home/>} />
+          <Route exact path="/second" element={<Second/>} />
+          <Route exact path="/navigation" element={<><Headerbar/><Footer/></>} />
+        </Routes>
     </Router>
   );
 }

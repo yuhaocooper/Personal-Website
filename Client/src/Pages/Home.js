@@ -1,4 +1,8 @@
-import Header from './Navbar.js';
+import Header, {Footer} from './Navbar.js';
+import About from './About.js';
+import Contact from './Contact.js';
+import Blog from './Blog.js'
+
 
 function callTestApi() {
     fetch('http://localhost:4000/api/test')
@@ -8,10 +12,24 @@ function callTestApi() {
 
 function Home (){  
     return (
-        <div>
-            <Header></Header>
-            <div> <h1 class='standard'>Cormorant</h1> </div>
-            <div><button onClick={callTestApi}>Call Test API</button></div>
+        <div id='grid-container'>
+            <div>
+                <Header></Header>
+            </div>
+            <div id='main-body'>
+                <h1>HI, I'M YUHAO</h1>
+                <h1>HI, I'M YUHAO</h1>
+                <h1>HI, I'M YUHAO</h1>
+                <h1>HI, I'M YUHAO</h1>
+                <h1>HI, I'M YUHAO</h1>
+                <h1>HI, I'M YUHAO</h1>
+                <h1>HI, I'M YUHAO</h1>
+                <h2>blah blah blah</h2>
+                <button onClick={callTestApi}>Call Test API</button>
+            </div>
+            <div className='footer-container'>
+                <Footer></Footer>
+            </div>
         </div>
     )
 }  

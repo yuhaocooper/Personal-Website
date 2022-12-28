@@ -1,12 +1,25 @@
+html, #root{
+  width: 100%;
+  height: 100%;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  height: 100%;
+  font-family: 'standard', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(255, 195, 0);
+  overflow: auto;
+  text-align: center;
 }
 /*######################################################### FONT ##################################################################*/
+@font-face {
+  font-family: 'bold';
+  src: url(./fonts/aleo-bold-webfont.ttf);
+}
 
 @font-face {
   font-family: 'standard';
@@ -18,8 +31,8 @@ body {
   src: url(./fonts/aleo-lightitalic-webfont.ttf);
 }
 
-.standard {
-  font-family: 'standard';
+.bold {
+  font-family: 'bold';
 }
 
 .italics {
@@ -27,23 +40,12 @@ body {
 }
 
 /*######################################################### FONT ##################################################################*/
-
-
 /*######################################################### ELEMENT SELECTORS ##################################################################*/
-div {
+
+header nav {
   text-align: center;
-  padding: 10px;
-  align-items: center;
-  height: 33vh;
-  width: 98%;
-}
-
-
-nav {
-  position: fixed;
-  right:0;
+  position: relative;
   top: 17px;
-  overflow: hidden;
   font-family: 'standard';
 }
 
@@ -53,36 +55,81 @@ nav a {
 }
 
 nav a:link{
-  color: lightblue
+  color: black;
+  text-decoration: none;
 }
 
 nav a:visited{
-  color: lightblue
-}
-
-nav a:hover{
-  color: red;
+  color: black;
+  text-decoration: none;
 }
 
 /*######################################################### ELEMENT SELECTORS ##################################################################*/
+/*######################################################### ID SELECTORS ##################################################################*/
+#grid-container{
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 5% 90% 5%;
+}
 
+#main-body{
+  margin: auto;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  box-sizing: border-box;
+}
 
 /*######################################################### ID SELECTORS ##################################################################*/
-/*######################################################### ID SELECTORS ##################################################################*/
+/*######################################################### CLASS SELECTORS ##################################################################*/
 
+.container{
+  display: grid;
+}
+
+.image{
+  background-image: url('./images/icons/icons8-medium-24.png');
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
 
 /*######################################################### CLASS SELECTORS ##################################################################*/
-.header {
-  position: absolute;
-  top: 17px;
-  right: 0;
+/*######################################################### RESPONSIVE ##################################################################*/
+
+
+
+/* Small devices (portrait tablets and large phones, 1000px and up) */
+@media only screen and (min-width: 1000px) {
+  header nav {
+    position: relative;
+    text-align: right;
+    top: 17px;
+    overflow: hidden;
+  }
+
+  footer nav {
+    text-align: right;
+  }
+  
 }
 
-.footer {
-  color: white;
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }
 
-.navbar {
-  color: orange;
-}
-/*######################################################### CLASS SELECTORS ##################################################################*/
+
+/*######################################################### RESPONSIVE ##################################################################*/

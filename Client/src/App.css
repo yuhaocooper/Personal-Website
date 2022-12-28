@@ -49,19 +49,17 @@ header nav {
   font-family: 'standard';
 }
 
+footer nav {
+  text-align: center;
+  position: relative;
+  font-family: 'standard';
+}
+
 nav a {
   display: inline;
-  padding: 8px;
-}
-
-nav a:link{
   color: black;
   text-decoration: none;
-}
-
-nav a:visited{
-  color: black;
-  text-decoration: none;
+  padding: 0px 8px;
 }
 
 /*######################################################### ELEMENT SELECTORS ##################################################################*/
@@ -88,12 +86,34 @@ nav a:visited{
   display: grid;
 }
 
-.image{
-  background-image: url('./images/icons/icons8-medium-24.png');
+.icon-medium{
+  background-image: url('./images/icons/medium.png');
   background-repeat: no-repeat;
+  background-size: 32px;
+  background-position: center;
   display: inline-block;
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
+}
+
+.icon-linkedin{
+  background-image: url('./images/icons/linkedin.png');
+  background-repeat: no-repeat;
+  background-size: 32px;
+  background-position: center;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+}
+
+.icon-github{
+  background-image: url('./images/icons/github.png');
+  background-repeat: no-repeat;
+  background-size: 32px;
+  background-position: center;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
 }
 
 /*######################################################### CLASS SELECTORS ##################################################################*/
@@ -110,10 +130,6 @@ nav a:visited{
     overflow: hidden;
   }
 
-  footer nav {
-    text-align: right;
-  }
-  
 }
 
 /* Medium devices (landscape tablets, 768px and up) */

@@ -8,7 +8,7 @@ function Header(){
       <nav>
         <Link to="/">HOME</Link>|
         <Link to="/about">ABOUT</Link>|
-        <Link to="/second">BLOG</Link>|
+        <Link to="/blog">BLOG</Link>|
         <Link to="/contact">CONTACT</Link>
       </nav>
     </header>
@@ -19,7 +19,9 @@ export function Footer(){
   return(
     <footer>
       <nav>
-        <a className='image' href="https://medium.com/@yuhaocooper"></a>
+        <a className='icon-linkedin' href="https://www.linkedin.com/in/yuhaocooper/"></a>
+        <a className='icon-github' href="https://github.com/yuhaocooper"></a>
+        <a className='icon-medium' href="https://medium.com/@yuhaocooper"></a>
       </nav>
     </footer>
   )

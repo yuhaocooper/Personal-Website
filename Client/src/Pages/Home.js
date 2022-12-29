@@ -1,4 +1,4 @@
-import Header, {Footer} from './Navbar.js';
+import Header, {Footer} from '../Components/Navbar.js';
 import About from './About.js';
 import Contact from './Contact.js';
 import Blog from './Blog.js'

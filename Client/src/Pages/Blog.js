@@ -1,4 +1,4 @@
-import Header, {Footer} from './Navbar.js';
+import Header, {Footer} from '../Components/Navbar.js';
 
 function Blog(){
     return (

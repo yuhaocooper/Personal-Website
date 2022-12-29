@@ -17,6 +17,7 @@ body {
   text-align: center;
 }
 /*######################################################### FONT ##################################################################*/
+/*
 @font-face {
   font-family: 'bold';
   src: url(./fonts/aleo-bold-webfont.ttf);
@@ -30,6 +31,14 @@ body {
 @font-face {
   font-family: 'italics';
   src: url(./fonts/aleo-lightitalic-webfont.ttf);
+}
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Aleo&display=swap');
+
+.title{
+  font-family: 'Bungee Shade';
+  font-size: 6rem;
 }
 
 .bold {
@@ -93,6 +102,24 @@ body {
   padding: 0px 8px;
 }
 
+.welcome-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  row-gap: 10%;
+}
+
+.welcome-body span {
+ animation-name: test;
+ animation-duration: 6s;
+}
+
+@keyframes test {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
 .icon-medium{
   background-image: url('./images/icons/medium.png');
   background-repeat: no-repeat;
@@ -121,6 +148,10 @@ body {
   display: inline-block;
   width: 32px;
   height: 32px;
+}
+
+.none {
+  display: none;
 }
 
 /*######################################################### CLASS SELECTORS ##################################################################*/

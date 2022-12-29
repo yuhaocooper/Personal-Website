@@ -5,7 +5,7 @@ function Welcome (){
         <div id='grid-container'>
             <Header visibility='hidden'></Header>
             <div className='title welcome-body'>
-                <span>Welcome,</span>
+                <span>Welcome!</span>
                 <span>HI, I'M YUHAO</span>
             </div>
             <Footer visibility='hidden'></Footer>

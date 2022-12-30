@@ -1,7 +1,7 @@
 import React from 'react';
 import Header, { Footer } from '../Components/Navbar.js';
 
-class Home extends React.Component{
+class Skills extends React.Component{
     constructor(props){
         super(props);
         this.state = {
@@ -25,7 +25,7 @@ class Home extends React.Component{
                     <Header></Header>
                 </div>
                 <div id='main-body'>
-                   <h1>Main Page</h1>
+                   <h1>Skills Page</h1>
                 </div>
                 <div className='footer-container'>
                     <Footer></Footer>
@@ -35,4 +35,4 @@ class Home extends React.Component{
     }
 }
 
-export default Home
+export default Skills

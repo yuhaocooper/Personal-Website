@@ -112,12 +112,20 @@ body {
 
 .animation {
  animation-name: test;
- animation-duration: 6s;
+ animation-duration: 2s;
+ animation-fill-mode: forwards;
 }
 
 @keyframes test {
   0% {opacity: 0;}
-  100% {opacity: 1;}
+  12.5% {opacity: 0.25;}
+  25% {opacity: 0.5;}
+  37.5% { opacity: 0.75;}
+  50% { opacity: 1;}
+  62.5% { opacity: 0.75;}
+  75% { opacity: 0.5;}
+  87.5% { opacity: 0.25;}
+  100% {opacity: 0;}
 }
 
 .icon-medium{
@@ -150,8 +158,8 @@ body {
   height: 32px;
 }
 
-.none {
-  display: none;
+.hidden {
+  visibility: hidden;
 }
 
 /*######################################################### CLASS SELECTORS ##################################################################*/

@@ -17,9 +17,11 @@ function Welcome(){
         }, []
     )
 
-    if (animationState == true){
-        //navigate('/home')
-    }
+    useEffect(()=>{
+        if (animationState == true){
+            navigate('/home')
+        }
+    })
 
     return(
         <div id='grid-container'>

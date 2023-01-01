@@ -14,11 +14,11 @@ function Welcome(){
         animation[0].addEventListener('animationend', ()=>{
             setAnimationState(true);
             })
-        }
+        }, []
     )
 
     if (animationState == true){
-        navigate('/home')
+        //navigate('/home')
     }
 
     return(

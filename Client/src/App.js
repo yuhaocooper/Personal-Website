@@ -4,10 +4,11 @@ import React from "react";
 import './App.css';
 
 //Pages
-import Welcome from "./Pages/Welcome";
 import Home from './Pages/Home'
+import About from "./Pages/About";
 import Skills from './Pages/Skills'
-import Contact from './Pages/Contact'
+import Work from "./Pages/Work";
+// import Contact from './Pages/Contact'
 // import Second from './Pages/Second'
 
 // We use Route in order to define the different routes of our application
@@ -17,10 +18,10 @@ function App() {
   return (
     <Router>
         <Routes>
-          <Route exact path="/" element={<Welcome/>} />
-          <Route exact path="/home" element={<Home/>} />
+          <Route exact path="/" element={<Home/>} />
+          <Route exact path="/about" element={<About/>} />
           <Route exact path="/skills" element={<Skills/>} />
-          <Route exact path="/contact" element={<Contact/>} />
+          <Route exact path="/work" element={<Work/>} />
         </Routes>
     </Router>
   );

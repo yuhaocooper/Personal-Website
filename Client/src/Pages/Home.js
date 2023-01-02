@@ -1,5 +1,6 @@
 import React from 'react';
 import Header, { Footer } from '../Components/Navbar.js';
+import Mainbody from '../Components/Mainbody.js';
 
 class Home extends React.Component{
     constructor(props){
@@ -24,7 +25,7 @@ class Home extends React.Component{
                     <Header></Header>
                 </div>
                 <div id='main-body'>
-                   <h1>Main Page</h1>
+                    <Mainbody></Mainbody>
                 </div>
                 <div className='footer-container'>
                     <Footer></Footer>

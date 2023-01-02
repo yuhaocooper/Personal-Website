@@ -5,9 +5,9 @@ function Header(props){
   return (
     <header>
       <nav className="header" style={{visibility: props.visibility}}>
-        <Link to="/home">HOME</Link>|
-        <Link to="/skills">SKILLS</Link>|
-        <Link to="/contact">CONTACT {props.visibility}</Link>
+        <Link to="/about">ABOUT</Link>|
+        <Link to="/work">WORK</Link>|
+        <Link to="/skills">SKILLS</Link>
       </nav>
     </header>
   )

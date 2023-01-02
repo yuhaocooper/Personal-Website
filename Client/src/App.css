@@ -162,6 +162,16 @@ body {
   visibility: hidden;
 }
 
+.testbutton{
+  background-image:url('./images/icons/learn-more@2x.png'); 
+  background-repeat:no-repeat;
+  background-size: 32px;
+  background-position: center;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+}
+
 /*######################################################### CLASS SELECTORS ##################################################################*/
 /*######################################################### RESPONSIVE ##################################################################*/
 

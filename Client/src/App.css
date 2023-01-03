@@ -38,15 +38,12 @@ body {
 
 .title{
   font-family: 'Bungee Shade';
-  font-size: 5vmax;
+  font-size: 6vmax;
 }
 
-.bold {
-  font-family: 'bold';
-}
-
-.italics {
-  font-family: 'italics';
+.sub-title{
+  font-family: 'Aleo';
+  font-size: 1.5vmax;
 }
 
 /*######################################################### FONT ##################################################################*/
@@ -63,6 +60,7 @@ body {
 
 #main-body{
   margin: auto;
+  width: 100%;
   padding-top: 17px;
   padding-bottom: 17px;
   box-sizing: border-box;
@@ -102,14 +100,7 @@ body {
   padding: 0px 8px;
 }
 
-.welcome-body{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  row-gap: 8%;
-}
-
+/*
 .animation {
  animation-name: test;
  animation-duration: 2s;
@@ -127,6 +118,7 @@ body {
   87.5% { opacity: 0.25;}
   100% {opacity: 0;}
 }
+*/
 
 .icon-medium{
   background-image: url('./images/icons/medium.png');
@@ -163,13 +155,13 @@ body {
 }
 
 .testbutton{
-  background-image:url('./images/icons/learn-more@2x.png'); 
+  background-image:url('./images/icons/Base-learn-more.png'); 
   background-repeat:no-repeat;
-  background-size: 32px;
+  background-size: 7vmax;
   background-position: center;
   display: inline-block;
-  width: 32px;
-  height: 32px;
+  width: 7vmax;
+  height: 7vmax;
 }
 
 /*######################################################### CLASS SELECTORS ##################################################################*/

@@ -6,22 +6,24 @@ function Mainbody(){
     const [count, setCount] = useState(0)
     const [title, setTitle] = useState()
     const [subTitle, setSubTitle] = useState()
+    const [link, setLink] = useState("/about")
     const list = [0,1,2,3]
     
     //set interval to change count
     useEffect(()=>{
         const interval = setInterval(() => {
             setCount(prevCount => prevCount + 1)
-        }, 1000);
+        }, 2000);
         return () => {clearInterval(interval)};
 
     }, [])
 
     //based on count, change the variables for the Mainbody
+    //Logic for title
     useEffect(()=>{
         if (count >3){
             setCount(0)
-        }
+        } 
         switch(count){
             case (0):
                 setTitle(<div className='title'><div>Welcome!</div><span>HI, I'M YUHAO</span></div>)
@@ -38,22 +40,38 @@ function Mainbody(){
         }
     },[count])
 
+    //Logic for subtitle
     useEffect(()=>{
-        if (count >3){
-            setCount(0)
-        }
         switch(count){
             case (0):
-                setSubTitle(<div className='sub-title'>WELCOME SUBTITLE</div>)
+                setSubTitle()
                 break;
             case (1):
-                setSubTitle(<div className='sub-title'>ABOUT ME SUBTITLE</div>)
+                setSubTitle(<div className='sub-title'>A builder, leader and avid runner.</div>)
                 break;
             case (2):
-                setSubTitle(<div className='sub-title'>WORK SUBTITLE</div>)
+                setSubTitle(<div className='sub-title'>Delivering value in the digital age.</div>)
                 break;
             case (3):
-                setSubTitle(<div className='sub-title'>SKILLS SUBTITLE</div>)
+                setSubTitle(<div className='sub-title'>A little product, coding, project and agile.</div>)
+                break;
+        }
+    },[count])
+
+    //Logic for link
+    useEffect(()=>{
+        switch(count){
+            case (0):
+                setLink("/about")
+                break;
+            case (1):
+                setLink("/about")
+                break;
+            case (2):
+                setLink("/work")
+                break;
+            case (3):
+                setLink("/skills")
                 break;
         }
     },[count])
@@ -64,7 +82,7 @@ function Mainbody(){
         <div>
             {title}
             {subTitle}
-            <div><a href="/about" className='testbutton'></a></div>
+            <div><a href={link} className='testbutton'></a></div>
         </div>
     )
 }

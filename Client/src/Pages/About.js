@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Header, {Footer} from '../Components/Navbar'
+import Slide from '../Components/Slide'
+import DescriptiveCards from '../Components/DescriptiveCards';
 
 function About(){
 
@@ -8,8 +10,8 @@ function About(){
         <div>
             <Header></Header>
         </div>
-        <div>
-            <h1>About Page</h1>
+        <div id='main-body'>
+            <DescriptiveCards></DescriptiveCards>
         </div>
         <div className='footer-container '>
             <Footer></Footer>

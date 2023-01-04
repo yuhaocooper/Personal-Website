@@ -8,7 +8,7 @@ function Work(){
         <div>
             <Header></Header>
         </div>
-        <div>
+        <div id='main-body'>
             <h1>Experience page</h1>
         </div>
         <div className='footer-container '>

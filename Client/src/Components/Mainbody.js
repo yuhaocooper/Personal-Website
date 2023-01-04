@@ -13,7 +13,7 @@ function Mainbody(){
     useEffect(()=>{
         const interval = setInterval(() => {
             setCount(prevCount => prevCount + 1)
-        }, 2000);
+        }, 3000);
         return () => {clearInterval(interval)};
 
     }, [])
@@ -29,13 +29,13 @@ function Mainbody(){
                 setTitle(<div className='title'><div>Welcome!</div><span>HI, I'M YUHAO</span></div>)
                 break;
             case (1):
-                setTitle(<div className='title'>ABOUT ME!</div>)
+                setTitle(<div className='title'>ABOUT ME</div>)
                 break;
             case (2):
-                setTitle(<div className='title'>MY WORK!</div>)
+                setTitle(<div className='title'>MY WORK</div>)
                 break;
             case (3):
-                setTitle(<div className='title'>SKILLS!</div>)
+                setTitle(<div className='title'>SKILLS</div>)
                 break;
         }
     },[count])

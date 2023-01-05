@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { useFetcher } from "react-router-dom";
+
 //import BG images
 import one from '../images/icons/letter-a-128x128-4078306.png'
 import two from '../images/icons/alphabet-b-128x128-4078265.png'

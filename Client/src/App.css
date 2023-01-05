@@ -12,7 +12,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(255, 195, 0);
+  background-color: rgb(231, 160, 185);
   overflow: auto;
   text-align: center;
 }
@@ -39,11 +39,13 @@ body {
 .title{
   font-family: 'Bungee Shade';
   font-size: 6vmax;
+  color: #2B2E33;
 }
 
 .sub-title{
   font-family: 'Aleo';
   font-size: 1.5vmax;
+  color: #2B2E33;
 }
 
 /*######################################################### FONT ##################################################################*/
@@ -160,7 +162,7 @@ body {
 
 .slide-container{
   margin: auto;
-  max-width: 650px;
+  max-width: 800px;
 }
 
 .slide-close{
@@ -187,8 +189,69 @@ body {
   display:block;
   width: 125px;
   height: 125px;
-  background-size: 125px;
+  margin: 0px 15px;
 }
+
+.slide-display-item-running{
+  display:block;
+  width: 125px;
+  height: 125px;
+  background-size: 125px;
+  background-image: url('./images/icons/running-icon.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slide-display-item-music{
+  display:block;
+  width: 125px;
+  height: 125px;
+  background-size: 125px;
+  background-image: url('./images/icons/music-icon.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slide-display-item-basketball{
+  display:block;
+  width: 125px;
+  height: 125px;
+  background-size: 125px;
+  background-image: url('./images/icons/basketball-icon.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slide-display-item-steak{
+  display:block;
+  width: 125px;
+  height: 125px;
+  background-size: 125px;
+  background-image: url('./images/icons/steak-icon.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slide-display-item-travel{
+  display:block;
+  width: 125px;
+  height: 125px;
+  background-size: 125px;
+  background-image: url('./images/icons/travel-icon.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slide-display-item-walking{
+  display:block;
+  width: 125px;
+  height: 125px;
+  background-size: 125px;
+  background-image: url('./images/icons/walking-icon.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 
 .slide-nav{
   display: flex;
@@ -201,10 +264,14 @@ body {
   width: 30px;
 }
 
+.slide-statement{
+  font-family: 'Bungee Shade';
+  font-size: 2.5rem;
+}
+
 .description-grid{
   display:grid;
   grid-template-columns: 2;
-  grid-template-rows: 2;
   justify-content: center;
 
 }
@@ -212,42 +279,52 @@ body {
 .description-grid-1{
   grid-column: 1/2;
   height: 35vh;
-  width: 35vw;
+  width: 30vw;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.description-grid-1-content-profile{
+  background-image:url('./images/icons/profile-icon.png'); 
+  background-repeat:no-repeat;
+  background-size: 256px;
+  background-position: center;
+  width: 256px;
+  height: 256px;
+}
+
+.description-grid-1-content-website{
+  background-image:url('./images/icons/website-icon.png'); 
+  background-repeat:no-repeat;
+  background-size: 256px;
+  background-position: center;
+  width: 256px;
+  height: 256px;
+}
+
 .description-grid-2{
   grid-column: 2/2;
   height: 35vh;
-  width: 35vw;
+  width: 30vw;
+  max-width: 400px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .description-grid-2-title{
-  display:flex;
-  justify-content: left;
-  height: 30%;
   width: 100%;
-  font-family: 'Aleo';
-  font-size: 3rem;
-}
-
-.description-grid-2-sub{
-  display:flex;
-  justify-content: left;
-  height: 20%;
-  font-family: 'Aleo';
-  font-size: 1.5rem;
-  color: #D13434;
+  font-family: 'Bungee Shade';
+  font-size: 2.5rem;
+  color: #2B2E33;
 }
 
 .description-grid-2-p{
-  display:flex;
-  justify-content: left;
-  height: 50%;
+  height: 70%;
   font-family: 'Aleo';
   font-size: 1rem;
+  white-space: pre-line;
+  color: #2B2E33;
 }
 
 .description-grid-3{
@@ -258,6 +335,30 @@ body {
   align-items: center;
   justify-content: center;
   gap: 10px;
+}
+
+.about-btn-me{
+  background-image:url('./images/icons/yuhao-btn.svg');
+  background-size: 80px 24px;
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 24px;
+}
+
+.about-btn-website{
+  background-image:url('./images/icons/website-btn.svg');
+  background-size: 80px 24px;
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 24px;
+}
+
+.about-btn-interests{
+  background-image:url('./images/icons/interests-btn.svg');
+  background-size: 100px 24px;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 24px;
 }
 
 .testbutton{

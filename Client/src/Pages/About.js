@@ -7,7 +7,6 @@ import AboutInterestsSlide from '../Components/AboutInterestsSlide';
 function About(){
     const [page, setPage] = useState('yuhao');
     const [index, setIndex] = useState(1)
-    const [isVisible, setIsVisible] = useState(true)
     const [displayBtn, setDisplayBtn] = useState({
         me: "none",
         website: "",
@@ -27,35 +26,6 @@ function About(){
         cardName: 'website'
         },
 ]);
-    //setVisible of footer based on index changes
-    useEffect(()=>{
-        index ? setIsVisible('') : setIsVisible('hidden')
-    },[index]);
-
-    //set display of btns
-    useEffect(()=>{
-        if (index == 1){
-            setDisplayBtn({
-                me: "none",
-                website: "",
-                interests: ""
-            })
-        }
-        else if (index == 2){
-            setDisplayBtn({
-                me: "",
-                website: "none",
-                interests: ""
-            })
-        }
-        else{
-            setDisplayBtn({
-                me: "",
-                website: "",
-                interests: "none"
-            })
-        }
-    },[index]);
 
     function handleOnClick(props){
         setIndex(props);
@@ -64,9 +34,9 @@ function About(){
     return(
         <div id='grid-container'>
         <div>
-            <Header visibility={isVisible}></Header>
+            <Header></Header>
         </div>
-        <div id='main-body'>
+        <div className='about-main-body'>
             {index ? <AboutDescriptiveCards title={content[index].title} description={content[index].description} cardName={content[index].cardName}></AboutDescriptiveCards> : <AboutInterestsSlide></AboutInterestsSlide>}
             <div className="description-grid-3">
                 <div className="about-btn-me" onClick={()=> handleOnClick(1)} style={{display: displayBtn.me}}></div>
@@ -75,7 +45,7 @@ function About(){
             </div>
         </div>
         <div className='footer-container'>
-            <Footer visibility={isVisible}></Footer>
+            <Footer></Footer>
         </div>
     </div>
     )

@@ -160,8 +160,14 @@ body {
   height: 32px;
 }
 
+.about-main-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .slide-container{
-  margin: auto;
   max-width: 800px;
 }
 
@@ -187,6 +193,22 @@ body {
 
 .slide-display-item{
   display:block;
+  width: 125px;
+  height: 125px;
+  margin: 0px 15px;
+}
+
+/*Mobile*/
+.slide-display-item-first{
+  display:none;
+  width: 125px;
+  height: 125px;
+  margin: 0px 15px;
+}
+
+/*Mobile*/
+.slide-display-item-last{
+  display:none;
   width: 125px;
   height: 125px;
   margin: 0px 15px;
@@ -252,7 +274,6 @@ body {
   background-position: center;
 }
 
-
 .slide-nav{
   display: flex;
   justify-content: center;
@@ -269,21 +290,28 @@ body {
   font-size: 2.5rem;
 }
 
+/*Mobile*/
 .description-grid{
-  display:grid;
-  grid-template-columns: 2;
+  display:flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 
 }
-
+/*Mobile*/
 .description-grid-1{
-  grid-column: 1/2;
-  height: 35vh;
-  width: 30vw;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+/*Mobile*/
+.description-grid-2{
+  width: 300px;
+  max-width: 400px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 
 .description-grid-1-content-profile{
   background-image:url('./images/icons/profile-icon.png'); 
@@ -301,15 +329,6 @@ body {
   background-position: center;
   width: 256px;
   height: 256px;
-}
-
-.description-grid-2{
-  grid-column: 2/2;
-  height: 35vh;
-  width: 30vw;
-  max-width: 400px;
-  text-align: justify;
-  text-justify: inter-word;
 }
 
 .description-grid-2-title{
@@ -387,9 +406,49 @@ body {
 
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+/* Medium devices (landscape tablets, 850px and up) */
+@media only screen and (min-width: 850px) {
 
+  .description-grid{
+    display:grid;
+    grid-template-columns: 2;
+    justify-content: center;
+  
+  }
+  
+  .description-grid-1{
+    grid-column: 1/2;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .description-grid-2{
+    grid-column: 2/2;
+    height: 35vh;
+    width: 30vw;
+    max-width: 400px;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+
+.slide-display-item-first{
+  display:block;
+  width: 125px;
+  height: 125px;
+  margin: 0px 15px;
+}
+
+
+.slide-display-item-last{
+  display:block;
+  width: 125px;
+  height: 125px;
+  margin: 0px 15px;
+}
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */

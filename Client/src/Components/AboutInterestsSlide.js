@@ -64,11 +64,11 @@ function AboutInterestsSlide(props){
         <div className="slide-container">
             <div className="slide-close"><a href="/" className="slide-close-a"></a></div>
             <div className="slide-display">
-                <div className="slide-display-item">{item1}</div>
+                <div className="slide-display-item-first">{item1}</div>
                 <div className="slide-display-item">{item2}</div>
                 <div className="slide-display-item">{item3}</div>
                 <div className="slide-display-item">{item4}</div>
-                <div className="slide-display-item">{item5}</div>
+                <div className="slide-display-item-last">{item5}</div>
             </div>
             <div className="slide-statement">
                 <div>{subtitle}</div>

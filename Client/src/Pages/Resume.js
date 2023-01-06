@@ -5,12 +5,12 @@ import pdf from './../images/pdf/resume.pdf'
 function Resume(){
 
     return (
-        <div id='grid-container'>
+        <div id='resume-container'>
             <div>
                 <Header></Header>
             </div>
             <div id='main-body'>
-                <iframe src={pdf} style={{height: '500px', width: '600px'}}></iframe>
+                <iframe src={pdf} style={{height: '500px', width: '100%', maxWidth: '1000px'}}></iframe>
             </div>
             <div className='footer-container'>
                 <Footer></Footer>

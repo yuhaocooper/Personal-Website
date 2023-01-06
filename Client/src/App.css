@@ -12,9 +12,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(231, 160, 185);
+  background-color: #FFC300;
   overflow: auto;
   text-align: center;
+  word-spacing: normal;
 }
 /*######################################################### FONT ##################################################################*/
 /*
@@ -296,7 +297,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 /*Mobile*/
 .description-grid-1{
@@ -331,6 +331,96 @@ body {
   height: 256px;
 }
 
+.description-grid-1-content-javascript{
+  background-image:url('./images/icons/javascript-icon.png'); 
+  background-repeat:no-repeat;
+  background-size: 256px;
+  background-position: center;
+  width: 256px;
+  height: 256px;
+}
+
+.description-grid-1-content-react{
+  background-image:url('./images/icons/react-icon.png'); 
+  background-repeat:no-repeat;
+  background-size: 256px;
+  background-position: center;
+  width: 256px;
+  height: 256px;
+}
+
+.description-grid-1-content-project-management{
+  background-image:url('./images/icons/projectmanagement-icon.png'); 
+  background-repeat:no-repeat;
+  background-size: 256px;
+  background-position: center;
+  width: 256px;
+  height: 256px;
+}
+
+.description-grid-1-content-htmlcss{
+  background-image:url('./images/icons/htmlcss-icon.png'); 
+  background-repeat:no-repeat;
+  background-size: 256px;
+  background-position: center;
+  width: 256px;
+  height: 256px;
+}
+
+.description-grid-1-content-agile{
+  background-image:url('./images/icons/agile-icon.png'); 
+  background-repeat:no-repeat;
+  background-size: 256px;
+  background-position: center;
+  width: 256px;
+  height: 256px;
+}
+
+.description-grid-1-content-pm-tools{
+  background-image:url('./images/icons/pmtools-icon.png'); 
+  background-repeat:no-repeat;
+  background-size: 256px;
+  background-position: center;
+  width: 256px;
+  height: 256px;
+}
+
+.description-grid-1-content-api{
+  background-image:url('./images/icons/api-icon.png'); 
+  background-repeat:no-repeat;
+  background-size: 256px;
+  background-position: center;
+  width: 256px;
+  height: 256px;
+}
+
+.description-grid-1-content-styletheory{
+  background-image:url('./images/icons/styletheory-icon.svg'); 
+  background-repeat:no-repeat;
+  background-size: 256px;
+  background-position: center;
+  width: 256px;
+  height: 256px;
+}
+
+.description-grid-1-content-crescodata{
+  background-image:url('./images/icons/crescodata-icon.svg'); 
+  background-repeat:no-repeat;
+  background-size: 256px;
+  background-position: center;
+  width: 256px;
+  height: 256px;
+}
+
+.description-grid-1-content-pomelo{
+  background-image:url('./images/icons/pomelo-icon.svg'); 
+  background-repeat:no-repeat;
+  background-size: 256px;
+  background-position: center;
+  width: 256px;
+  height: 256px;
+}
+
 .description-grid-2-title{
   width: 100%;
   font-family: 'Bungee Shade';
@@ -353,7 +443,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 10px;
+  margin-top: 15px;
 }
 
 .about-btn-me{
@@ -377,6 +469,86 @@ body {
   background-size: 100px 24px;
   background-repeat: no-repeat;
   width: 100px;
+  height: 24px;
+}
+
+.skills-btn-javascript{
+  background-image:url('./images/icons/javascript-btn.svg');
+  background-size: 100px 24px;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 24px;
+}
+
+.skills-btn-react{
+  background-image:url('./images/icons/react-btn.svg');
+  background-size: 80 24px;
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 24px;
+}
+
+.skills-btn-project-management{
+  background-image:url('./images/icons/projectmanagement-btn.svg');
+  background-size: 200 24px;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 24px;
+}
+
+.skills-btn-htmlcss{
+  background-image:url('./images/icons/htmlcss-btn.svg');
+  background-size: 100px 24px;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 24px;
+}
+
+.skills-btn-agile{
+  background-image:url('./images/icons/agile-btn.svg');
+  background-size: 60px 24px;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 24px;
+}
+
+.skills-btn-pm-tools{
+  background-image:url('./images/icons/pmtools-btn.svg');
+  background-size: 100px 24px;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 24px;
+}
+
+.skills-btn-api{
+  background-image:url('./images/icons/api-btn.svg');
+  background-size: 60px 24px;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 24px;
+}
+
+.work-btn-styletheory{
+  background-image:url('./images/icons/styletheory-btn.svg');
+  background-size: 120px 24px;
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 24px;
+}
+
+.work-btn-crescodata{
+  background-image:url('./images/icons/crescodata-btn.svg');
+  background-size: 120px 24px;
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 24px;
+}
+
+.work-btn-pomelo{
+  background-image:url('./images/icons/pomelo-btn.svg');
+  background-size: 80px 24px;
+  background-repeat: no-repeat;
+  width: 80px;
   height: 24px;
 }
 
@@ -427,11 +599,13 @@ body {
 
   .description-grid-2{
     grid-column: 2/2;
-    height: 35vh;
     width: 30vw;
     max-width: 400px;
+    display: flex;
+    flex-direction: column;
     text-align: justify;
     text-justify: inter-word;
+    flex-wrap: wrap;
   }
 
 

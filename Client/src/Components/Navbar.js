@@ -8,7 +8,8 @@ function Header(props){
         <Link to="/">HOME</Link>|
         <Link to="/about">ABOUT</Link>|
         <Link to="/work">WORK</Link>|
-        <Link to="/skills">SKILLS</Link>
+        <Link to="/skills">SKILLS</Link>|
+        <Link to="/resume">RÉSUMÉ</Link>
       </nav>
     </header>
   )

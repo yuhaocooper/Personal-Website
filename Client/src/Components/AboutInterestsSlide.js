@@ -8,7 +8,7 @@ function AboutInterestsSlide(props){
     var travel = <div className="slide-display-item-travel" ></div>
     var walking = <div className="slide-display-item-walking"></div>
     const list = [running,music, basketball, steak, travel, walking]
-    const subtitlelist = ['SERIOUS HOBBY JOGGER','MUSIC IS LIFE','HAD NBA DREAMS','LOVE A GOOD STEAK','TRAVELLING', "LONG WALKS"]
+    const subtitlelist = ['SERIOUS HOBBY JOGGER','MUSIC ALL DAY','BASKETBALL IS LIFE','MEDIUM RARE STEAK','TRAVELLING', "LONG WALKS"]
     const intervalTime = 2000
 
     const intervalRef = useRef(null)

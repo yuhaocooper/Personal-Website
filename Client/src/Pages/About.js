@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Header, {Footer} from '../Components/Navbar'
-import Slide from '../Components/Slide'
-import AboutDescriptiveCards from '../Components/AboutDescriptiveCards'
+import DescriptiveCards from '../Components/DescriptiveCards'
 import AboutInterestsSlide from '../Components/AboutInterestsSlide';
 
 function About(){
@@ -27,17 +26,43 @@ function About(){
         },
 ]);
 
+    //set state of index as we change 'pages'
     function handleOnClick(props){
         setIndex(props);
     };
 
+    //effect to hide the btn for the current page based on the index
+    useEffect(()=>{
+        if (index == 1){
+            setDisplayBtn({
+                me: "none",
+                website: "",
+                interests: ""
+            })
+        }
+        else if (index == 2){
+            setDisplayBtn({
+                me: "",
+                website: "none",
+                interests: ""
+            })
+        }
+        else{
+            setDisplayBtn({
+                me: "",
+                website: "",
+                interests: "none"
+            })
+        }
+    },[index])
+
     return(
-        <div id='grid-container'>
+        <div id='grid-container' style={{backgroundColor: '#E39EB6'}}>
         <div>
             <Header></Header>
         </div>
         <div className='about-main-body'>
-            {index ? <AboutDescriptiveCards title={content[index].title} description={content[index].description} cardName={content[index].cardName}></AboutDescriptiveCards> : <AboutInterestsSlide></AboutInterestsSlide>}
+            {index ? <DescriptiveCards title={content[index].title} description={content[index].description} cardName={content[index].cardName}></DescriptiveCards> : <AboutInterestsSlide></AboutInterestsSlide>}
             <div className="description-grid-3">
                 <div className="about-btn-me" onClick={()=> handleOnClick(1)} style={{display: displayBtn.me}}></div>
                 <div className="about-btn-website" onClick={()=> handleOnClick(2)} style={{display: displayBtn.website}}></div>

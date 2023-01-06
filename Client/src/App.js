@@ -13,6 +13,7 @@ import Work from "./Pages/Work";
 
 // We use Route in order to define the different routes of our application
 import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
+import Resume from "./Pages/Resume";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route exact path="/about" element={<About/>} />
           <Route exact path="/skills" element={<Skills/>} />
           <Route exact path="/work" element={<Work/>} />
+          <Route exact path="/resume" element={<Resume/>} />
         </Routes>
     </Router>
   );

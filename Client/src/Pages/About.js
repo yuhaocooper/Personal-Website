@@ -39,6 +39,7 @@ function About(){
                 website: "",
                 interests: ""
             })
+            window.scrollTo(0, 0)
         }
         else if (index == 2){
             setDisplayBtn({
@@ -46,6 +47,7 @@ function About(){
                 website: "none",
                 interests: ""
             })
+            window.scrollTo(0, 0)
         }
         else{
             setDisplayBtn({
@@ -53,26 +55,27 @@ function About(){
                 website: "",
                 interests: "none"
             })
+            window.scrollTo(0, 0)
         }
     },[index])
 
     return(
-        <div id='grid-container' style={{backgroundColor: '#E39EB6'}}>
-        <div>
-            <Header></Header>
-        </div>
-        <div className='about-main-body'>
-            {index ? <DescriptiveCards title={content[index].title} description={content[index].description} cardName={content[index].cardName}></DescriptiveCards> : <AboutInterestsSlide></AboutInterestsSlide>}
-            <div className="description-grid-3">
-                <div className="about-btn-me" onClick={()=> handleOnClick(1)} style={{display: displayBtn.me}}></div>
-                <div className="about-btn-website" onClick={()=> handleOnClick(2)} style={{display: displayBtn.website}}></div>
-                <div className="about-btn-interests" onClick={()=> handleOnClick(false)} style={{display: displayBtn.interests}}></div>
+        <div id='about-container' style={{backgroundColor: '#E39EB6'}}>
+            <div>
+                <Header></Header>
+            </div>
+            <div id='main-body'>
+                {index ? <DescriptiveCards title={content[index].title} description={content[index].description} cardName={content[index].cardName}></DescriptiveCards> : <AboutInterestsSlide></AboutInterestsSlide>}
+                <div className="description-grid-3">
+                    <div className="about-btn-me" onClick={()=> handleOnClick(1)} style={{display: displayBtn.me}}></div>
+                    <div className="about-btn-website" onClick={()=> handleOnClick(2)} style={{display: displayBtn.website}}></div>
+                    <div className="about-btn-interests" onClick={()=> handleOnClick(false)} style={{display: displayBtn.interests}}></div>
+                </div>
+            </div>
+            <div className='footer-container'>
+                <Footer></Footer>
             </div>
         </div>
-        <div className='footer-container'>
-            <Footer></Footer>
-        </div>
-    </div>
     )
 }
 

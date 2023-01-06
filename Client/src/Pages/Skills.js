@@ -73,6 +73,7 @@ function Skills() {
                     pmtools: "",
                     api: ""
                 })
+                window.scrollTo(0, 0)
                 break;
             case(1):
                 setDisplayBtn({
@@ -84,6 +85,7 @@ function Skills() {
                     pmtools: "",
                     api: ""
                 })
+                window.scrollTo(0, 0)
                 break;
             case(2):
                 setDisplayBtn({
@@ -95,6 +97,7 @@ function Skills() {
                     pmtools: "",
                     api: ""
                 })
+                window.scrollTo(0, 0)
                 break;
             case(3):
                 setDisplayBtn({
@@ -106,6 +109,7 @@ function Skills() {
                     pmtools: "",
                     api: ""
                 })
+                window.scrollTo(0, 0)
                 break;
             case(4):
                 setDisplayBtn({
@@ -117,6 +121,7 @@ function Skills() {
                     pmtools: "",
                     api: ""
                 })
+                window.scrollTo(0, 0)
                 break;
             case(5):
                 setDisplayBtn({
@@ -128,6 +133,7 @@ function Skills() {
                     pmtools: "none",
                     api: ""
                 })
+                window.scrollTo(0, 0)
                 break;
             case(6):
                 setDisplayBtn({
@@ -139,12 +145,13 @@ function Skills() {
                     pmtools: "",
                     api: "none"
                 })
+                window.scrollTo(0, 0)
                 break;
         }
     },[index])
 
     return (
-        <div id='grid-container'>
+        <div id='skills-container'>
             <div>
                 <Header></Header>
             </div>

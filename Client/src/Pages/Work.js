@@ -40,6 +40,7 @@ function Work() {
                 crescodata: "",
                 styletheory: ""
             })
+            window.scrollTo(0, 0)
         }
         else if (index == 1){
             setDisplayBtn({
@@ -47,6 +48,7 @@ function Work() {
                 crescodata: "none",
                 styletheory: ""
             })
+            window.scrollTo(0, 0)
         }
         else{
             setDisplayBtn({
@@ -54,11 +56,12 @@ function Work() {
                 crescodata: "",
                 styletheory: "none"
             })
+            window.scrollTo(0, 0)
         }
     },[index])
 
     return (
-        <div id='grid-container' style={{backgroundColor: '#E39EB6'}}>
+        <div id='work-container' style={{backgroundColor: '#E39EB6'}}>
             <div>
                 <Header></Header>
             </div>

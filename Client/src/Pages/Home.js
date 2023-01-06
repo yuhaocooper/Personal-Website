@@ -20,7 +20,7 @@ class Home extends React.Component{
     render(){
 
         return (
-            <div id='grid-container'>
+            <div id='home-container'>
                 <div>
                     <Header></Header>
                 </div>

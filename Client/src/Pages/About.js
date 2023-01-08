@@ -16,12 +16,12 @@ function About(){
         {}, //trick so that I can use the index state to set ternary condition for the descriptive and slide functions
         {
         title: "YUHAO", 
-        description: <div>I am passionate about shipping products and delivering value to the end target users through digital technologies. <br></br><br></br> I believe such endeavours require a team to execute on it, so I specialize in building and working with teams on agile product development.<br></br><br></br> I am currently looking for a new opportunity, with an ideal role as a <b>Scrum Master</b> or a <b>Project Manager</b>, but I am open to exploring a <b>Product</b> or <b>Implementation</b> role too. Do reach out if you're interested!  </div>,
+        description: <div>I am passionate about shipping products and delivering value to the end target users through digital technologies. <br></br><br></br> I believe such endeavours require a team to execute on it, so I specialize in building and working with teams on agile product development.<br></br><br></br> I am currently looking for a NEW opportunity. My ideal role would be as a <b>Scrum Master</b>, but I'm interested in pursuing <b>Project Manager</b>, <b>Product</b> or <b>Implementation</b> roles too. Do reach out if you think I'll be a right fit for your organization.</div>,
         cardName: 'profile'
         },
         {
         title: "Website",
-        description: "This website is hosted on AWS lightsail. \n\nIt is built on MERN stack. \n\nThe domain is owned by me, and is currently hosted by Google Domains. \n\nYou may find the code for it through my Github repo below",
+        description: <div>This website is hosted on AWS lightsail. <br></br><br></br> It is built with a MERN stack. <br></br><br></br>The domain is owned by me, and is currently hosted by Google Domains. <br></br><br></br>You may find the code for it through my Github repo below.</div>,
         cardName: 'website'
         },
 ]);
@@ -60,7 +60,7 @@ function About(){
     },[index])
 
     return(
-        <div id='about-container' style={{backgroundColor: '#E39EB6'}}>
+        <div id='about-container'>
             <div>
                 <Header></Header>
             </div>

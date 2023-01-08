@@ -474,12 +474,14 @@ body {
   color: #2B2E33;
 }
 
+/*Mobile*/
 .description-grid-2-p{
   height: 70%;
   font-family: 'Aleo';
   font-size: 1rem;
   white-space: pre-line;
   color: #2B2E33;
+  margin-top: 10px;
 }
 
 .description-grid-3{
@@ -491,7 +493,7 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
-  margin-top: 15px;
+  margin-top: 25px;
 }
 
 .about-btn-me{
@@ -655,6 +657,13 @@ body {
     flex-wrap: wrap;
   }
 
+  .description-grid-2-p{
+    height: 70%;
+    font-family: 'Aleo';
+    font-size: 1rem;
+    white-space: pre-line;
+    color: #2B2E33;
+  }
 
 .slide-display-item-first{
   display:block;

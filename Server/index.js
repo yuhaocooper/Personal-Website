@@ -8,7 +8,9 @@ const assert = require('assert')
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+    origin: ['http://yuhaocooper.com', 'https://yuhaocooper.com', 'http://letocommerce.com', 'https://letocommerce.com', 'http://localhost:3000'  ]
+}));
 
 // enables environment variables by
 // parsing the .env file and assigning it to process.env
@@ -29,6 +31,19 @@ app.use(bodyParser.json());
 //############################################################## SERVER API #############################################################################
 app.get('/api/test', async(req,res) => {
     res.send('log from api')
+})
+
+app.post('/api/email', async(req,res) => {
+    //Post to Apps Script
+    fetch(process.env.emailLink, { //Make sure .env file contains 'emailLink' of the Google Sheet webapp
+        method: "POST",
+        body: JSON.stringify(req.body),
+        headers: {
+            "Content-type": "application/json; charset=UTF-8"
+        }
+        })
+        .then((response) => response.json())
+        .then((json) => console.log(json));
 })
 
 //############################################################## CLIENT API #############################################################################

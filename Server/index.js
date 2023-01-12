@@ -43,7 +43,7 @@ app.post('/api/email', async(req,res) => {
         }
         })
         .then((response) => response.json())
-        .then((json) => console.log(json));
+        .then((json) => res.send(json));
 })
 
 //############################################################## CLIENT API #############################################################################

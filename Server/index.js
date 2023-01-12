@@ -19,7 +19,7 @@ dotenv.config({
   });
 
 mongoose.connect(`mongodb://${process.env.apiBaseUrl}:${process.env.dbport}`).then(() => {
-    console.log("Connected successfully")
+    console.log("Mongodb Connected successfully")
 }, err => {
     console.log("error", console.error.bind(console, "connection error: "))
 })

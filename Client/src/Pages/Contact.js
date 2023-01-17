@@ -9,7 +9,7 @@ function Contact(){
             <div id='main-body'>
                 <h1>CONTACT</h1>
             </div>
-            <div className='footer-container'>
+            <div>
                 <Footer></Footer>
             </div>
         </div>

@@ -34,7 +34,7 @@ function Work() {
 
     //effect to hide the btn for the current page based on the index
     useEffect(()=>{
-        if (index == 0){
+        if (index === 0){
             setDisplayBtn({
                 pomelo: "none",
                 crescodata: "",
@@ -42,7 +42,7 @@ function Work() {
             })
             window.scrollTo(0, 0)
         }
-        else if (index == 1){
+        else if (index === 1){
             setDisplayBtn({
                 pomelo: "",
                 crescodata: "none",
@@ -73,7 +73,7 @@ function Work() {
                     <div className="work-btn-styletheory" onClick={()=> handleOnClick(2)} style={{display: displayBtn.styletheory}}></div>
                 </div>
             </div>
-            <div className='footer-container'>
+            <div>
                 <Footer></Footer>
             </div>
         </div>

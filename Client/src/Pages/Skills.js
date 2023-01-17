@@ -71,7 +71,7 @@ function Skills() {
                     <div className="skills-btn-api" onClick={()=> handleOnClick(6)}></div>
                 </div>
             </div>
-            <div className='footer-container'>
+            <div>
                 <Footer></Footer>
             </div>
         </div>

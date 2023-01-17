@@ -19,9 +19,9 @@ export function Footer(props){
   return(
     <footer>
       <nav className="footer" style={{visibility: props.visibility}}>
-        <a className='icon-linkedin' href="https://www.linkedin.com/in/yuhaocooper/"></a>
-        <a className='icon-github' href="https://github.com/yuhaocooper"></a>
-        <a className='icon-medium' href="https://medium.com/@yuhaocooper"></a>
+        <a href="https://www.linkedin.com/in/yuhaocooper/"><img src="images/linkedin.png" alt="linkedin-icon" width="32px" height="32px"/></a>
+        <a href="https://github.com/yuhaocooper"><img src="images/github.png" alt="github-icon" width="32px" height="32px"/></a>
+        <a href="https://medium.com/@yuhaocooper"><img src="images/medium.png" alt="medium-icon" width="32px" height="32px"/></a>
       </nav>
     </footer>
   )

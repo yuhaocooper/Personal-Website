@@ -10,9 +10,9 @@ function Resume(){
                 <Header></Header>
             </div>
             <div id='main-body'>
-                <iframe src={pdf} style={{height: '500px', width: '100%', maxWidth: '1000px'}}></iframe>
+                <iframe src={pdf} style={{height: '500px', width: '100%', maxWidth: '1000px'}} title="Resume"></iframe>
             </div>
-            <div className='footer-container'>
+            <div>
                 <Footer></Footer>
             </div>
         </div>

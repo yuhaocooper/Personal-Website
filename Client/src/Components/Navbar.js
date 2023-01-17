@@ -22,6 +22,7 @@ export function Footer(props){
         <a href="https://www.linkedin.com/in/yuhaocooper/"><img src={require('./../images/icons/linkedin.png')} alt="linkedin-icon" width="32px" height="32px"/></a>
         <a href="https://github.com/yuhaocooper"><img src={require('./../images/icons/github.png')} alt="github-icon" width="32px" height="32px"/></a>
         <a href="https://medium.com/@yuhaocooper"><img src={require('./../images/icons/medium.png')} alt="medium-icon" width="32px" height="32px"/></a>
+        <a href="mailto:yuhao@yuhaocooper.com"><img src={require('./../images/icons/email.png')} alt="email-icon" width="32px" height="32px"/></a>
       </nav>
     </footer>
   )

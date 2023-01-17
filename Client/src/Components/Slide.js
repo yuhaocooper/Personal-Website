@@ -64,7 +64,7 @@ function Slide(props){
 
     return (
         <div className="slide-container">
-            <div className="slide-close"><a href="/"><img src="images/close.png" width="36px" height="36px" alt="close"/></a></div>
+            <div className="slide-close"><a href="/"><img src={require('./../images/icons/close.png')} width="36px" height="36px" alt="close"/></a></div>
             <div className="slide-display">
                 <div className="slide-display-item-first">{item1}</div>
                 <div className="slide-display-item">{item2}</div>

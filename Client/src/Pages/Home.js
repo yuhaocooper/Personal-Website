@@ -94,7 +94,7 @@ function Home (){
             <div id='main-body'>
                 {title}
                 {subTitle}
-                <div className='learn-more-btn'><a href={link}><img src="images/Base-learn-more.svg" alt="learnmore" width="100%" height="100%"/></a></div>
+                <div className='learn-more-btn'><a href={link}><img src={require('./../images/icons/Base-learn-more.svg').default} alt="learnmore" width="100%" height="100%"/></a></div>
             </div>
             <div>
                 <Footer></Footer>

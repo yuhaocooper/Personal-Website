@@ -567,6 +567,119 @@ body {
   height: 10vmax;
 }
 
+/*Blog page css*/
+
+.blog-container{
+  display:flex;
+  justify-content: left;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.cardsmall {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  width: 300px;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, .125);
+  border-radius: .25rem;
+  box-shadow: 0 2px 0 rgba(90, 97, 105, 0.11), 0 4px 8px rgba(90, 97, 105, 0.12), 0 10px 10px rgba(90, 97, 105, 0.06), 0 7px 70px rgba(90, 97, 105, 0.1);
+  background-color: #fff;
+  border: none;
+  border-radius: 0.625rem;
+  margin-right: 30px;
+  height: 430px;
+}
+
+.cardpost__image {
+  position: relative;
+  min-height: 13.3125rem;
+  border-top-left-radius: 0.625rem;
+  border-top-right-radius: 0.625rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card-title{
+  height:34px;
+}
+
+.cardText {
+  display: block;
+  /* or inline-block */
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow: hidden;
+  max-height: 4.6em;
+  font-family: 'Aleo' -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-weight: 500;
+  color: #2B2E33;
+  font-size: 16px;
+}
+
+.grid {
+  margin-bottom: 30px;
+}
+
+.grid h5 {
+  margin-top: 15px;
+}
+
+.grid svg {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+  width: 0.875em;
+  margin-right: 10px;
+}
+
+.grid span {
+  font-size: 16px;
+  font-family: 'Aleo';
+  display: inline;
+}
+
+.authorimg {
+  transform: translateY(5%);
+  margin-left: 1.5625rem;
+  position: absolute;
+  bottom: 0;
+}
+
+.authorimg a {
+  box-shadow: 0 0 0 0.125rem #fff, 0 0.1875rem 0.4375rem rgba(90, 97, 105, 0.5);
+  display: block;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  text-indent: -9999px;
+  width: 3.1875rem;
+  height: 3.1875rem;
+}
+
+.textfiordblue {
+  color: #2B2E33;
+  font-family: 'Aleo';
+}
+
+.text-dark{
+  font-family: 'Aleo';
+  font-weight: bold;
+  color: #2B2E33;
+}
+
+.text-muted{
+  font-family: 'Aleo';
+  color: #C9C7C7;
+}
+
 /*######################################################### CLASS SELECTORS ##################################################################*/
 /*######################################################### RESPONSIVE ##################################################################*/
 

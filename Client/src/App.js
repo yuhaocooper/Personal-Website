@@ -8,8 +8,7 @@ import Home from './Pages/Home'
 import About from "./Pages/About";
 import Skills from './Pages/Skills'
 import Work from "./Pages/Work";
-// import Contact from './Pages/Contact'
-// import Second from './Pages/Second'
+import Blog from "./Pages/Blog";
 
 // We use Route in order to define the different routes of our application
 import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
@@ -24,6 +23,7 @@ function App() {
           <Route exact path="/skills" element={<Skills/>} />
           <Route exact path="/work" element={<Work/>} />
           <Route exact path="/resume" element={<Resume/>} />
+          <Route exact path="/blog" element={<Blog/>} />
         </Routes>
     </Router>
   );

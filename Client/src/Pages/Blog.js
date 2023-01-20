@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import Axios from "axios";
 import ShowBlog from "../Components/ShowBlog";
 import Spinner from "../Components/Spinner";
+import Header from "../Components/Navbar";
+import { Footer } from "../Components/Navbar";
 
 export class Blog extends Component {
   constructor(props) {
@@ -77,11 +79,17 @@ export class Blog extends Component {
       );
     }
     return (
-      <div>
-        <div className="blog-container">
+      <div id='home-container'>
+        <div>
+          <Header></Header>
+        </div>
+        <div className="blogpost-container">
+          <div className="title" style={{fontSize: '40px'}}>Medium Articles</div>
           {post}
         </div>
-
+        <div>
+            <Footer></Footer>
+          </div>
       </div>
     );
   }

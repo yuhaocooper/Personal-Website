@@ -70,7 +70,7 @@ function About(){
     },[index])
 
     return(
-        <div id='about-container'>
+        <div id='about-container' style={{backgroundColor: '#E39EB6'}}>
             <div>
                 <Header></Header>
             </div>

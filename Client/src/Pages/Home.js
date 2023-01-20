@@ -21,7 +21,7 @@ function Home (){
     //based on count, change the variables for the Mainbody
     //Logic for title
     useEffect(()=>{
-        if (count >3){
+        if (count >4){
             setCount(0)
         } 
         switch(count){
@@ -36,6 +36,9 @@ function Home (){
                 break;
             case (3):
                 setTitle(<div className='title'>SKILLS</div>)
+                break;
+            case (4):
+                setTitle(<div className='title'>BLOG</div>)
                 break;
             default:
                 setTitle(<div className='title'><div>Welcome!</div><span>HI, I'M YUHAO</span></div>)
@@ -57,6 +60,9 @@ function Home (){
                 break;
             case (3):
                 setSubTitle(<div className='sub-title'>A little product, coding, project and agile.</div>)
+                break;
+            case (4):
+                setSubTitle(<div className='sub-title'>Some of my thoughts captured on Medium.</div>)
                 break;
             default:
                 setSubTitle()

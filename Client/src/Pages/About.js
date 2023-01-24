@@ -26,7 +26,7 @@ function About(){
         {}, //trick so that I can use the index state to set ternary condition for the descriptive and slide functions
         {
         title: "YUHAO", 
-        description: <div>I am passionate about shipping products and delivering value to the end target users through digital technologies. <br></br><br></br> I believe such endeavours require a team to execute on it, so I specialize in building and working with teams on agile product development.<br></br><br></br> I am currently looking for a NEW opportunity. My ideal role would be as a <b>Scrum Master</b>, but I'm interested in pursuing <b>Project Manager</b>, <b>Product</b> or <b>Implementation</b> roles too. Do reach out if you think I'll be a right fit for your organization.</div>,
+        description: <div>Hi, I am a <b>BUILDER.</b><br></br><br></br>I specialize in being the conduit between the different teams in agile product development with a mix of programming, product, project management and business operations skills.<br></br><br></br> I am currently looking for a <b>NEW</b> opportunity. Do reach out if you are looking for a builder who can increase the <b>value</b> of your product development or operations.</div>,
         cardName: 'profile'
         },
         {
